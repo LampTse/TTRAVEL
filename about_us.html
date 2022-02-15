@@ -19,7 +19,7 @@
 
     <nav>
       <div class="logo">
-        <img src="/Logo/Logo.svg" />
+        <a href="homepage.html"> <img src="/Logo/Logo.svg" /></a>   
       </div>
 
       <ul class="nav__links">
@@ -165,31 +165,37 @@
     <!--========= footer ========-->
     <section id="footer_container">
       <div class="footer__wrapper">
-        <div class="icon">
-          <img src="/Logo/logo_white.svg" alt="" />
+        <div class="logo__footer">
+          <a href="homepage.html"><img src="/Logo/logo_white.svg" alt="" /></a>
         </div>
-        <div class="nav__links">
+        
           <ul class="footer_links">
             <li><a href="homepage.html">HOME</a></li>
-            <li><a href="#">DESTINATIONS</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li><a href="destinations.html">DESTINATIONS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact_us.html">CONTACT US</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
           </ul>
-        </div>
-        <div class="information__wrapper">
-          <div class="info__content">
-            <i class="uil uil-phone">+ 92 777 444 0000</i>
-            <i class="uil uil-envelope">lampros.tsel@gmail.com</i>
-            <i class="uil uil-location-point">55 Street, Athens, Greece</i>
-          </div>
-        </div>
-        <div class="newsletter__wrapper">
+        
+       
           <div class="newsletter">
             <h3>Subscribe to our newsletter</h3>
-            <input type="email" placeholder="Email address" />
-          </div>
+            
+            <div class="email__container">
+            
+             <input placeholder=" Email..." type="email" class="contact__input__footer">
+
+             <a href="#" class="button button__footer">
+              Subscribe
+          </a>
         </div>
+        </div>
+      </div>
+      <div class="social__icons__container">
+        <i class="uil uil-linkedin social__icons"></i>
+        <i class="uil uil-facebook social__icons"></i>
+        <i class="uil uil-twitter social__icons"></i>
+
       </div>
     </section>
   </body>
