@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <title>ContactsUs__Page</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -17,15 +18,15 @@
 
      <nav>
         <div class="logo">
-            <a href="homepage.html"> <img src="/Logo/Logo.svg"></a>
+            <a href="index.html"> <img src="/Logo/Logo.svg"></a>
              </div>
             
      <ul class="nav__links">
-         <li><a href="homepage.html">HOME</a></li>
-         <li><a href="destinations.html">DESTINATIONS</a></li>
-         <li><a href="events.html">EVENTS</a></li>
-         <li><a href="contact_us.html">CONTACT US</a></li>
-         <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="destinations.html">DESTINATIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
      </ul>
      <div class="burger">
          <div class="line1"></div>
@@ -54,30 +55,42 @@
         Feel Free to<br> Contact with
         us</h2>
     </div>
-         <form action="" class="contact__form">
+        
+         <form  class="contact__form">
              <div class="contact__inputs">
                  <div class="contact__content">
-                     <label for="" class="contact__label">Name</label>
-                     <input type="text" class="contact__input">
+                     <label for="name" class="contact__label">Full Name</label>
+                     <input name="name" type="text" class="contact__input">
+                     <div class="error-hint hidden">Your name is required</div>
                  </div>
+
                  <div class="contact__content">
-                     <label for="" class="contact__label">Email</label>
-                     <input type="email" class="contact__input">
+                     <label for="name" class="contact__label">Email</label>
+                     <input name="email" type="text" class="contact__input">
+                     <div class="error-hint hidden">Your email is invalid</div>
                  </div>
              </div>
+
              <div class="contact__content">
-                <label for="" class="contact__label">Message</label>
-                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                <label for="name" class="contact__label">Message</label>
+                <textarea name="message" type="text" cols="0" rows="7" class="contact__input"></textarea>
+                <div class="error-hint hidden">Your message is required.</div>
             </div>
 
-            <div>
-                <a href="#" class="button button__contact">
+           
+                <button type="submit" name="btn" class="button button__contact">
                     Send Message
-                    <i class="uil uil-message button__icon"></i>
-                </a>
-            </div>
+                    <i class="uil uil-message button__icon"></i> 
+                </button> 
+            
          </form>
-     </div>
+
+         <!--====== Feedback message ======-->
+
+    <div class="thank-you hidden">Thank you for your Message!</div>
+       
+    <!--====== Contact info ======-->
+       
  </section>
 
  <div class="information__container">
@@ -115,11 +128,11 @@
   <section id="footer_container">
     <div class="footer__wrapper">
       <div class="logo__footer">
-        <a href="homepage.html"><img src="/Logo/logo_white.svg" alt="" /></a>
+        <a href="index.html"><img src="/Logo/logo_white.svg" alt="" /></a>
       </div>
       
         <ul class="footer_links">
-          <li><a href="homepage.html">HOME</a></li>
+          <li><a href="index.html">HOME</a></li>
           <li><a href="destinations.html">DESTINATIONS</a></li>
           <li><a href="events.html">EVENTS</a></li>
           <li><a href="contact_us.html">CONTACT US</a></li>
