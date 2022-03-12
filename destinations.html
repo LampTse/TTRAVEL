@@ -10,6 +10,9 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="tabs.js" defer></script>
+    <script src="reveal.js" defer></script>
+
     <title>Destinations__Page</title>
   </head>
   <body>
@@ -50,90 +53,127 @@
 
     <section id="destinations">
       <div class="destinations__container">
-        <div class="destinations__box">
+        <div class="destinations__box reveal">
           <div class="destinations__img">
             <img src="/Destinations/Content/ Berlin.jpg" alt="img" />
           </div>
           <div class="destinations__content">
             <h3>Berlin</h3>
-            <ul>
-              <li><a href="#">INFO</a></li>
-              <li><a href="#"></a>SCHEDULE</li>
-              <li><a href="#"></a>DATES</li>
-              <li><a href="#"></a>PRICE</li>
+            <ul class="tabs">
+              <li data-tab-target="info">INFO</li>
+              <li data-tab-target="schedule">SCHEDULE</li>
+              <li data-tab-target="dates">DATES</li>
+              <li data-tab-target="price">PRICE</li>
             </ul>
-            <p>
-              The German capital Berlin has plenty to offer: from historical
-              sites to world-class museums and a vibrant nightlife. Enjoy this
-              private tour to explore a wide range of activities in Berlin and
-              Potsdam, including several UNESCO World Heritage Sites. This
-              itinerary is just a starting point as all services are 100%
-              customisable to suit your travel wants and needs.
-            </p>
+
+            <div class="tab-content">
+              <p>
+                The German capital Berlin has plenty to offer: from historical
+                sites to world-class museums and a vibrant nightlife. Enjoy this
+                private tour to explore a wide range of activities in Berlin and
+                Potsdam, including several UNESCO World Heritage Sites. This
+                itinerary is just a starting point as all services are 100%
+                customisable to suit your travel wants and needs.
+              </p>
+            </div>
+           
           </div>
         </div>
-        <div class="destinations__box">
+        <div class="destinations__box reveal">
           <div class="destinations__img">
             <img src="/Destinations/Content/Lisbon.jpg" alt="img" />
           </div>
           <div class="destinations__content">
             <h3>Lisbon</h3>
-            <ul>
-              <li><a href="#">INFO</a></li>
-              <li><a href="#"></a>SCHEDULE</li>
-              <li><a href="#"></a>DATES</li>
-              <li><a href="#"></a>PRICE</li>
+            <ul class="tabs">
+              <li data-tab-target="info">INFO</li>
+              <li data-tab-target="schedule">SCHEDULE</li>
+              <li data-tab-target="dates">DATES</li>
+              <li data-tab-target="price">PRICE</li>
             </ul>
-            <p>
-              Travel to Lisbon and you’ll find mainland Europe’s westernmost
-              capital is a fascinating and inspiring place to spend a few days.
-              This is thanks to its wonderful waterfront location, balmy climate
-              and quirky range of attractions that combine a
-              place-that-time-forgot feel with a modern vibrancy that few
-              European cities can match.
-            </p>
+
+            <div class="tab-content">
+              <p>
+                The German capital Berlin has plenty to offer: from historical
+                sites to world-class museums and a vibrant nightlife. Enjoy this
+                private tour to explore a wide range of activities in Berlin and
+                Potsdam, including several UNESCO World Heritage Sites. This
+                itinerary is just a starting point as all services are 100%
+                customisable to suit your travel wants and needs.
+              </p>
+            </div>
+
           </div>
         </div>
-        <div class="destinations__box">
+
+        <div class="destinations__box reveal">
           <div class="destinations__img">
             <img src="/Destinations/Content/London.jpg" alt="img" />
           </div>
           <div class="destinations__content">
             <h3>London</h3>
-            <ul>
-              <li><a href="#">INFO</a></li>
-              <li><a href="#"></a>SCHEDULE</li>
-              <li><a href="#"></a>DATES</li>
-              <li><a href="#"></a>PRICE</li>
+
+            <ul class="tabs">
+              <li data-tab-target="info">INFO</li>
+              <li data-tab-target="schedule">SCHEDULE</li>
+              <li data-tab-target="dates">DATES</li>
+              <li data-tab-target="price">PRICE</li>
             </ul>
-            <p>
-              London - there’s nowhere in the world quite like it. Get to know
-              its style and history with one of our amazing days out in London,
-              or treat someone special to their own unique adventure in the
-              capital. From entry to iconic attractions, weird and wonderful
-              tours through its backstreets and adrenaline-fuelled adventures,
-              we’ve got an experience day in London for everyone.
-            </p>
+
+            <div class="tab-content">
+              <p>
+                The German capital Berlin has plenty to offer: from historical
+                sites to world-class museums and a vibrant nightlife. Enjoy this
+                private tour to explore a wide range of activities in Berlin and
+                Potsdam, including several UNESCO World Heritage Sites. This
+                itinerary is just a starting point as all services are 100%
+                customisable to suit your travel wants and needs.
+              </p>
+            </div>
+
           </div>
         </div>
-        <div class="destinations__box">
+        <div class="destinations__box reveal">
           <div class="destinations__img">
             <img src="/Destinations/Content/Amsterdam.jpg" alt="" />
           </div>
+           
           <div class="destinations__content">
             <h3>Amsterdam</h3>
-            <ul>
-              <li><a href="#">INFO</a></li>
-              <li><a href="#"></a>SCHEDULE</li>
-              <li><a href="#"></a>DATES</li>
-              <li><a href="#"></a>PRICE</li>
+
+            <ul class="tabs">
+              <li data-tab-target="#info" class="active tab">INFO</li>
+              <li data-tab-target="#schedule" class="tab">SCHEDULE</li>
+              <li data-tab-target="#dates" class="tab">DATES</li>
+              <li data-tab-target="#price" class="tab">PRICE</li>
             </ul>
-            <p>
-              Visit the world-famous 17th century capital of Holland. Enjoy the
-              historic buildings, beautiful museums and pleasant ambiance. Go
-              for a boat tour on the canals, stroll through Vondelpark, and go
-              shopping in the inner city. Amsterdam is a unique city!
-            </p>
+
+            <div class="tab-content">
+              <div id="info" data-tab-content class="active"> 
+                <p>
+                  The German capital Berlin has plenty to offer: from historical
+                  sites to world-class museums and a vibrant nightlife. Enjoy this
+                  private tour to explore a wide range of activities in Berlin and
+                  Potsdam, including several UNESCO World Heritage Sites. This
+                  itinerary is just a starting point as all services are 100%
+                  customisable to suit your travel wants and needs.
+                </p>
+              </div>
+
+              <div id="schedule" data-tab-content>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, praesentium quos! Exercitationem quisquam animi ducimus!</p>
+              </div>
+
+              <div id="dates" data-tab-content>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, culpa?</p>
+              </div>
+
+              <div id="price" data-tab-content>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptas, eaque voluptates, consectetur blanditiis nostrum error soluta repellendus labore assumenda iusto ea ipsam nam obcaecati nemo velit reiciendis ad quam.</p>
+              </div>
+             
+            </div>
+
           </div>
         </div>
       </div>
