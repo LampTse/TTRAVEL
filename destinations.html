@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="tabs.js" defer></script>
     <script src="reveal.js" defer></script>
+    <script src="burger.js" defer></script>
 
     <title>Destinations__Page</title>
   </head>
@@ -24,7 +25,7 @@
         
       </div>
 
-      <ul class="nav__links">
+      <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
         <li><a href="destinations.html">DESTINATIONS</a></li>
         <li><a href="events.html">EVENTS</a></li>
@@ -59,22 +60,44 @@
           </div>
           <div class="destinations__content">
             <h3>Berlin</h3>
-            <ul class="tabs">
-              <li data-tab-target="info">INFO</li>
-              <li data-tab-target="schedule">SCHEDULE</li>
-              <li data-tab-target="dates">DATES</li>
-              <li data-tab-target="price">PRICE</li>
+
+               <ul class="tabs">
+              <li data-tab-target="#info1" class="active tab">INFO</li>
+              <li data-tab-target="#schedule1" class="tab">SCHEDULE</li>
+              <li data-tab-target="#dates1" class="tab">DATES</li>
+              <li data-tab-target="#price1" class="tab">PRICE</li>
             </ul>
 
             <div class="tab-content">
-              <p>
-                The German capital Berlin has plenty to offer: from historical
-                sites to world-class museums and a vibrant nightlife. Enjoy this
-                private tour to explore a wide range of activities in Berlin and
-                Potsdam, including several UNESCO World Heritage Sites. This
-                itinerary is just a starting point as all services are 100%
-                customisable to suit your travel wants and needs.
-              </p>
+              <div id="info1" data-tab-content class="active"> 
+                <p>
+                  The German capital Berlin has plenty to offer: from historical
+                  sites to world-class museums and a vibrant nightlife. Enjoy this
+                  private tour to explore a wide range of activities in Berlin and
+                  Potsdam, including several UNESCO World Heritage Sites. This
+                  itinerary is just a starting point as all services are 100%
+                  customisable to suit your travel wants and needs.
+                </p>
+              </div>
+
+              <div id="schedule1" data-tab-content>
+                <p><i class="uil1 uil-angle-right"></i>Private Berlin Complete History All Day Tour.</p>
+                <p><i class="uil1 uil-angle-right"></i>The 10 Tastings of Berlin With Locals: Private Food Tour</p>
+                <p><i class="uil1 uil-angle-right"></i>Private Tour from Berlin to Potsdam with Expert Local Guide - All Must-See Sites</p>
+                
+               
+              </div>
+
+              <div id="dates1" data-tab-content>
+                <p><i class="uil1 uil-angle-right"></i> Tuesday, 19 April <span>-</span> Sunday, 24 April</p>
+                <p><i class="uil1 uil-angle-right"></i>Tuesday, 10 May <span>-</span> Sunday, 15 May</p>
+                <p><i class="uil1 uil-angle-right"></i>Wednesday, 15 June <span>-</span> Monday, 20 April</p>
+              </div>
+
+              <div id="price1" data-tab-content>
+                <p><span>Average Price <br><i class="uil1 uil-angle-right"></i>250€ - 400€</p>
+              </div>
+             
             </div>
            
           </div>
@@ -85,22 +108,42 @@
           </div>
           <div class="destinations__content">
             <h3>Lisbon</h3>
-            <ul class="tabs">
-              <li data-tab-target="info">INFO</li>
-              <li data-tab-target="schedule">SCHEDULE</li>
-              <li data-tab-target="dates">DATES</li>
-              <li data-tab-target="price">PRICE</li>
+
+             <ul class="tabs">
+              <li data-tab-target="#info2" class="active tab">INFO</li>
+              <li data-tab-target="#schedule2" class="tab">SCHEDULE</li>
+              <li data-tab-target="#dates2" class="tab">DATES</li>
+              <li data-tab-target="#price2" class="tab">PRICE</li>
             </ul>
 
             <div class="tab-content">
-              <p>
-                The German capital Berlin has plenty to offer: from historical
-                sites to world-class museums and a vibrant nightlife. Enjoy this
-                private tour to explore a wide range of activities in Berlin and
-                Potsdam, including several UNESCO World Heritage Sites. This
-                itinerary is just a starting point as all services are 100%
-                customisable to suit your travel wants and needs.
-              </p>
+              <div id="info2" data-tab-content class="active"> 
+                <p>
+                  Lisbon is a fascinating city full of history, monuments, impressive bridges and vintage street cars. And these are just a few of the reasons that make it an extremely interesting city to visit and a place you will want to return to.
+                  In 2016, Lisbon was ranked number 7 in the top ten European cities to visit. Its cheap flights, relative closeness to major capital cities like Madrid, Paris and London, make it an ideal destination for a weekend break.
+                  Visiting Lisbon is relatively inexpensive and you can find low-cost flights from the UK for just £30 ($36, 34€) and hotels from £55 ($78, 65€).
+                </p>
+              </div>
+
+              <div id="schedule2" data-tab-content>
+                <p><i class="uil1 uil-angle-right"></i>The evening you arrive: Baixa</p>
+                <p><i class="uil1 uil-angle-right"></i>Morning day 1: São Jorge Castle, Alfama and Park of the Nations</p>
+                <p><i class="uil1 uil-angle-right"></i>Evening day 1: Chiado and Bairro Alto</p>
+                <p><i class="uil1 uil-angle-right"></i>Morning day 2: Belém</p>
+                
+               
+              </div>
+
+              <div id="dates2" data-tab-content>
+                <p><i class="uil1 uil-angle-right"></i> Tuesday, 19 April <span>-</span> Sunday, 24 April</p>
+                <p><i class="uil1 uil-angle-right"></i>Tuesday, 10 May <span>-</span> Sunday, 15 May</p>
+                <p><i class="uil1 uil-angle-right"></i>Wednesday, 15 June <span>-</span> Monday, 20 April</p>
+              </div>
+
+              <div id="price2" data-tab-content>
+                <p><span>Average Price <br><i class="uil1 uil-angle-right"></i>200€ - 350€</p>
+              </div>
+             
             </div>
 
           </div>
@@ -114,25 +157,50 @@
             <h3>London</h3>
 
             <ul class="tabs">
-              <li data-tab-target="info">INFO</li>
-              <li data-tab-target="schedule">SCHEDULE</li>
-              <li data-tab-target="dates">DATES</li>
-              <li data-tab-target="price">PRICE</li>
+              <li data-tab-target="#info3" class="active tab">INFO</li>
+              <li data-tab-target="#schedule3" class="tab">SCHEDULE</li>
+              <li data-tab-target="#dates3" class="tab">DATES</li>
+              <li data-tab-target="#price3" class="tab">PRICE</li>
             </ul>
 
             <div class="tab-content">
-              <p>
-                The German capital Berlin has plenty to offer: from historical
-                sites to world-class museums and a vibrant nightlife. Enjoy this
-                private tour to explore a wide range of activities in Berlin and
-                Potsdam, including several UNESCO World Heritage Sites. This
-                itinerary is just a starting point as all services are 100%
-                customisable to suit your travel wants and needs.
-              </p>
+              <div id="info3" data-tab-content class="active"> 
+                <p>
+                  London is one of the most popular cities in the world. It’s home to charming pubs, world-class (and often free) museums, tons of history, some of the best theater in the world, a diverse population, incredible food, and a wild nightlife.
+                  I know it’s cliched to say there’s something for everyone but, in this sprawling metropolis, there really is.
+                  I’ve been visiting London since 2008 and, with every subsequent visit, the city has grown on me. The more I go, the more awesome stuff I see, the more I fall in love with it. There’s always something new to do here and there’s an energetic vibe to the city.
+                  Unfortunately, it’s also an expensive destination. A visit here can eat a hole in any budget if you aren’t careful.
+                  Luckily, there are tons of free and cheap things to do in London. While budget travelers will need to be frugal here, you can still visit London on a budget and have an amazing time.
+
+
+                </p>
+              </div>
+
+              <div id="schedule3" data-tab-content>
+                <p><i class="uil1 uil-angle-right"></i>Guided walking tour of London’s royal sights and River Thames cruise.</p>
+                <p><i class="uil1 uil-angle-right"></i>Secret Food Tour: London Bridge & Borough Market w/ Private Tour Option.</p>
+                <p><i class="uil1 uil-angle-right"></i>Semi-Private Guided Tour of British Museum.</p>
+                <p><i class="uil1 uil-angle-right"></i>Stonehenge Half Day Tour with Entry and Extra Time.</p>
+                
+               
+              </div>
+
+              <div id="dates3" data-tab-content>
+                <p><i class="uil1 uil-angle-right"></i> Tuesday, 19 April <span>-</span> Sunday, 24 April</p>
+                <p><i class="uil1 uil-angle-right"></i>Tuesday, 10 May <span>-</span> Sunday, 15 May</p>
+                <p><i class="uil1 uil-angle-right"></i>Wednesday, 15 June <span>-</span> Monday, 20 April</p>
+              </div>
+
+              <div id="price3" data-tab-content>
+                <p><span>Average Price <br><i class="uil1 uil-angle-right"></i>300€ - 450€</p>
+              </div>
+             
             </div>
+
 
           </div>
         </div>
+
         <div class="destinations__box reveal">
           <div class="destinations__img">
             <img src="/Destinations/Content/Amsterdam.jpg" alt="" />
@@ -142,34 +210,35 @@
             <h3>Amsterdam</h3>
 
             <ul class="tabs">
-              <li data-tab-target="#info" class="active tab">INFO</li>
-              <li data-tab-target="#schedule" class="tab">SCHEDULE</li>
-              <li data-tab-target="#dates" class="tab">DATES</li>
-              <li data-tab-target="#price" class="tab">PRICE</li>
+              <li data-tab-target="#info4" class="active tab">INFO</li>
+              <li data-tab-target="#schedule4" class="tab">SCHEDULE</li>
+              <li data-tab-target="#dates4" class="tab">DATES</li>
+              <li data-tab-target="#price4" class="tab">PRICE</li>
             </ul>
 
             <div class="tab-content">
-              <div id="info" data-tab-content class="active"> 
+              <div id="info4" data-tab-content class="active"> 
                 <p>
-                  The German capital Berlin has plenty to offer: from historical
-                  sites to world-class museums and a vibrant nightlife. Enjoy this
-                  private tour to explore a wide range of activities in Berlin and
-                  Potsdam, including several UNESCO World Heritage Sites. This
-                  itinerary is just a starting point as all services are 100%
-                  customisable to suit your travel wants and needs.
+                  Amsterdam is the Netherlands most famous city. With a population of around 800.000 inhabitants, Amsterdam is also the biggest city of the Netherlands (total population approx. 17 million). Amsterdam was founded around the 12th century and grew to become a unique wealthy and historic city during the “Dutch Golden Age”. This refers to the period between 1588 and 1672 during which Dutch vessels discovered the world and returned with valuable goods. This is exactly the reason why you will find so many canals in the historic center of Amsterdam (UNESCO world heritage site).
                 </p>
               </div>
 
-              <div id="schedule" data-tab-content>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, praesentium quos! Exercitationem quisquam animi ducimus!</p>
+              <div id="schedule4" data-tab-content>
+                <p><i class="uil1 uil-angle-right"></i>The historic city center incl. many canals (UNESCO world heritage).</p>
+                <p><i class="uil1 uil-angle-right"></i>Red light district & cannabis stores (local coffeeshops).</p>
+                <p><i class="uil1 uil-angle-right"></i>World-class museums like Rijksmuseum, Van Gogh, Hermitage & Anne Frank house.</p>
+                
+               
               </div>
 
-              <div id="dates" data-tab-content>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, culpa?</p>
+              <div id="dates4" data-tab-content>
+                <p><i class="uil1 uil-angle-right"></i> Tuesday, 19 April <span>-</span> Sunday, 24 April</p>
+                <p><i class="uil1 uil-angle-right"></i>Tuesday, 10 May <span>-</span> Sunday, 15 May</p>
+                <p><i class="uil1 uil-angle-right"></i>Wednesday, 15 June <span>-</span> Monday, 20 April</p>
               </div>
 
-              <div id="price" data-tab-content>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptas, eaque voluptates, consectetur blanditiis nostrum error soluta repellendus labore assumenda iusto ea ipsam nam obcaecati nemo velit reiciendis ad quam.</p>
+              <div id="price4" data-tab-content>
+                <p><span>Average Price <br><i class="uil1 uil-angle-right"></i>250€ - 400€</p>
               </div>
              
             </div>
