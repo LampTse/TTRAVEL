@@ -1,6 +1,6 @@
 /*=========== GOOGLE FONTS ==========*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400;1,600&display=swap");
 /* Base */
 :root {
   /*========  Colors ======== */
@@ -16,13 +16,13 @@
 
   /* Primary Shades */
 
-  --bright-navy-blue: #3075C6ff;
-  --tufts-blue: #4D88CEff;
-  --little-boy-blue: #6A9CD6ff;
-  --french-sky-blue: #87AFDFff;
-  --baby-blue-eyes: #A3C2E7ff;
-  --beau-blue: #C0D6EFff;
-  --alice-blue: #DDE9F7ff;
+  --bright-navy-blue: #3075c6ff;
+  --tufts-blue: #4d88ceff;
+  --little-boy-blue: #6a9cd6ff;
+  --french-sky-blue: #87afdfff;
+  --baby-blue-eyes: #a3c2e7ff;
+  --beau-blue: #c0d6efff;
+  --alice-blue: #dde9f7ff;
 
   /*========= Z index =========*/
 
@@ -70,7 +70,7 @@ html {
 /* Main Styling */
 html,
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--main-white);
   font-size: var(--normal-font-size);
   color: var(--text-color);
@@ -143,7 +143,6 @@ nav {
   position: fixed;
   z-index: 10;
   width: 100%;
-
 }
 
 .logo {
@@ -173,11 +172,11 @@ a {
   display: block;
   position: relative;
   padding: 0.2em 0;
-  }
+}
 
 /* Fade in NavLinks*/
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -186,12 +185,12 @@ a {
   background-color: var(--primary-color);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
-  }
+}
 
- a:hover::after,
- a:focus::after {
-opacity: 1;
-transform: translate3d(0, 0.2em, 0);
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 .burger {
@@ -226,15 +225,14 @@ transform: translate3d(0, 0.2em, 0);
     transition: transform 0.5s ease-in;
   }
   .nav-links li {
-    opacity: 1;  
+    opacity: 1;
   }
   .burger {
     display: block;
   }
   .logo {
-    
     padding: 1rem;
-   width: 250px;
+    width: 250px;
   }
 }
 
@@ -242,12 +240,12 @@ transform: translate3d(0, 0.2em, 0);
   transform: translateX(0%);
 }
 
-@keyframes navLinkFade{
-  from{
+@keyframes navLinkFade {
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
@@ -257,7 +255,7 @@ transform: translate3d(0, 0.2em, 0);
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 .toggle .line2 {
-opacity: 0;
+  opacity: 0;
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
@@ -285,7 +283,7 @@ opacity: 0;
 }
 
 #showcase {
-  content: '';
+  content: "";
   background: url(/IMG/Homepage/Header/showcase2.jpg) no-repeat center
     center/cover;
   width: 100%;
@@ -294,10 +292,45 @@ opacity: 0;
 
 /* Showcase Text Animation */
 
-.showcase-animation{
-  animation:bounce-in-top 1.8s both
+.showcase-animation {
+  animation: bounce-in-top 1.8s both;
 }
-@keyframes bounce-in-top{0%{transform:translateY(-500px);animation-timing-function:ease-in;opacity:0}38%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}55%{transform:translateY(-65px);animation-timing-function:ease-in}72%{transform:translateY(0);animation-timing-function:ease-out}81%{transform:translateY(-28px);animation-timing-function:ease-in}90%{transform:translateY(0);animation-timing-function:ease-out}95%{transform:translateY(-8px);animation-timing-function:ease-in}100%{transform:translateY(0);animation-timing-function:ease-out}}
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
 
 .showcase__container {
   display: flex;
@@ -307,7 +340,7 @@ opacity: 0;
 }
 .showcase__content div h1 {
   font-size: 4rem;
-  color: rgb(230, 238, 248);  
+  color: rgb(230, 238, 248);
   padding: 1rem 0 2.5rem 0;
   margin-bottom: 2rem;
 }
@@ -320,7 +353,13 @@ opacity: 0;
 #top__destinations {
   display: flex;
   justify-content: center;
-  background: linear-gradient(180deg, #FFFFFF 2.08%, #DDE9F7 34.38%, rgba(221, 233, 247, 0.609375) 71.87%, rgba(196, 196, 196, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 2.08%,
+    #dde9f7 34.38%,
+    rgba(221, 233, 247, 0.609375) 71.87%,
+    rgba(196, 196, 196, 0) 100%
+  );
 }
 .container__gallery {
   display: flex;
@@ -328,7 +367,7 @@ opacity: 0;
   width: 90%;
   justify-content: space-around;
   align-items: center;
-  
+
   margin-bottom: 50px;
 }
 
@@ -348,7 +387,7 @@ opacity: 0;
   grid-gap: 1rem;
 }
 
-.fade::after{
+.fade::after {
   content: "TTRAVEL";
   display: flex;
   align-items: center;
@@ -366,7 +405,7 @@ opacity: 0;
   transition: opacity 0.5s ease;
 }
 
-.fade:hover::after{
+.fade:hover::after {
   opacity: 0.5;
 }
 
@@ -374,7 +413,6 @@ opacity: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
 .grid__item1 {
@@ -424,7 +462,6 @@ opacity: 0;
   position: absolute;
 }
 
-
 /*========  Why Choose Section ======== */
 .wrapper {
   display: flex;
@@ -462,7 +499,6 @@ opacity: 0;
   color: var(--text-color);
 }
 
-
 /*======== Events ======== */
 #events {
   display: flex;
@@ -470,17 +506,24 @@ opacity: 0;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  background: linear-gradient(180deg, #FFFFFF 2.08%, #DDE9F7 34.38%, rgba(221, 233, 247, 0.609375) 71.87%, rgba(196, 196, 196, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 2.08%,
+    #dde9f7 34.38%,
+    rgba(221, 233, 247, 0.609375) 71.87%,
+    rgba(196, 196, 196, 0) 100%
+  );
 }
 
 .events__title {
   margin-bottom: 50px;
   margin-top: 50px;
+  font-size: 1.2rem;
+  color: var(--secontary-color);
 }
 .events__container {
   display: flex;
   margin: 1rem;
-  
 }
 
 .box-event {
@@ -568,10 +611,9 @@ opacity: 0;
 .logo__footer {
   cursor: pointer;
 }
-.footer_links{
+.footer_links {
   display: flex;
   flex-direction: row;
-  
 }
 .footer_links li a {
   display: flex;
@@ -586,7 +628,7 @@ opacity: 0;
   color: var(--primary-color);
 }
 
-.contact__input__footer{
+.contact__input__footer {
   padding: 0.25rem 0.5rem 0.5rem 0;
   border-radius: 0.3rem;
   margin-top: 0.6rem;
@@ -618,7 +660,7 @@ opacity: 0;
   margin-top: 20px;
 }
 
-.social__icons__container i{
+.social__icons__container i {
   font-size: 1.8rem;
   color: var(--primary-color);
   padding: 1rem;
@@ -629,7 +671,6 @@ opacity: 0;
   color: var(--hover-color);
 }
 
-
 /*======== Showcase2 =========*/
 
 #showcase2 {
@@ -639,10 +680,9 @@ opacity: 0;
   padding: 2rem;
 }
 
-#showcase2{
-  content: '';
-  background: url(/Destinations/Header/img3.jpg) no-repeat center
-    center/cover;
+#showcase2 {
+  content: "";
+  background: url(/Destinations/Header/img3.jpg) no-repeat center center/cover;
   width: 100%;
   top: 10vh;
   height: 30vh;
@@ -651,8 +691,6 @@ opacity: 0;
 .showcase2__container {
   display: flex;
   flex-direction: row;
-  
-  
 }
 
 .showcase2__content h1 {
@@ -662,7 +700,7 @@ opacity: 0;
   padding: 1rem;
   margin-top: 60px;
   left: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
 }
 
@@ -688,7 +726,13 @@ opacity: 0;
 }
 
 .destinations__box {
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,233,247,1) 36%, rgba(221,233,247,1) 66%, rgba(255,255,255,1) 100%)
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(221, 233, 247, 1) 36%,
+    rgba(221, 233, 247, 1) 66%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .destinations__img {
@@ -748,17 +792,17 @@ h3 {
   color: var(--primary-color);
 }
 
-.tab:hover {
+.tab:hover:not(.active) {
   color: var(--hoverTabs-color);
 }
 
-/* Tabs content */ 
+/* Tabs content */
 
 #price p span {
   font-size: 1rem;
   font-weight: 500;
 }
-.uil1{
+.uil1 {
   color: var(--primary-color);
 }
 /*======== Contact us =========*/
@@ -768,7 +812,13 @@ h3 {
   justify-content: space-around;
   margin-top: 150px;
   padding-bottom: 100px;
-  background: linear-gradient(180deg, #FFFFFF 2.08%, #DDE9F7 34.38%, rgba(221, 233, 247, 0.609375) 71.87%, rgba(196, 196, 196, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 2.08%,
+    #dde9f7 34.38%,
+    rgba(221, 233, 247, 0.609375) 71.87%,
+    rgba(196, 196, 196, 0) 100%
+  );
 }
 
 .contact__form {
@@ -781,7 +831,7 @@ h3 {
   left: 47px;
   font-weight: 700;
   font-size: 2rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
   font-weight: 600;
 }
@@ -876,9 +926,15 @@ h3 {
 }
 /*======== About us =========*/
 
-
 #about__us {
   width: 100%;
+  background: linear-gradient(
+    180deg,
+    #ffffff 2.08%,
+    #dde9f7 34.38%,
+    rgba(221, 233, 247, 0.609375) 71.87%,
+    rgba(196, 196, 196, 0) 100%
+  );
 }
 
 .about__us__box {
@@ -950,9 +1006,6 @@ h3 {
 .testimonial__name {
   font-size: var(--normal-font-size);
 }
-
-
-
 
 /*==== Feedback Message ====*/
 .hidden {

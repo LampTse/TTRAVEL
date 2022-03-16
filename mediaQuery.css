@@ -1,0 +1,186 @@
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+    .showcase-animation {
+        font-size: 1rem;
+    }
+    /* Why Choose us section */
+    .why_choose__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .why_choose__container {
+   
+  width: 100%;
+    }
+
+    .why_choose__img {
+        height: 250px;
+    }
+    .why_choose__container2 {
+        width: 90%;
+        margin-top: 50px;
+        text-align: center;
+        
+    }
+
+    .why_choose__container2 h1 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .why_choose__container2 p {
+        margin-top: 20px;
+    }
+    /* events in index */
+    .events__container {
+        flex-direction: column;
+    }
+
+    /* Testimonatianls */
+
+    .testimonials__container {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .testimonials_box {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .box3 {
+        display:none;
+    }
+
+    /* Companies */
+    .companies__wrapper {
+        width: 100%;
+        height: 60%;
+        border-radius: 0;
+    }
+    .companies_box1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .companies_box1 h2{
+        font-size: 0.8rem;
+    }
+    .companies_box1 h5{
+        font-size: 0.55rem;
+    }
+    .companies_box2 {
+        display: flex;
+    }
+    .svg__icons {
+        height: 30px;
+    }
+
+    /* Footer */
+    .footer__wrapper {
+        flex-direction: column;
+        margin-top: -10px;
+        
+    }
+    .logo__footer {
+        width: 200px;
+    }
+
+    .footer_links li a {
+        font-size: 10px;
+    }
+    .footer_links {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .newsletter {
+        font-size: 14px;
+    }
+    .contact__input__footer {
+        width: 70%;
+    }
+    .newsletter {
+        margin-left: 10px;
+    }
+
+    /* Destinations site */
+    .destinations__content {
+        margin-top: 10px;
+    }
+    .tab-content p{
+        font-size: 0.8rem;
+        width: 320px;
+        
+     
+    }
+    .destinations__box  {
+        flex-direction: column;
+        align-items: center;
+        right: 70px;
+    }
+    .destinations__img img{
+        width: 300px;
+    }
+
+    /* Events site */
+    .events {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-items: center;
+    }
+    .event-content h3 {
+        width: 300px;
+    }
+    .event-content p {
+        width: 300px;
+    }
+    /* About */
+    .about__us__box {
+        flex-direction: column;
+    }
+    .about__us__img img{
+        width: 350px;
+        height: 200px;
+    }
+    .about__us__content {
+        width: 100%;
+        margin-left: -70px;
+    }
+    .about__us__content h3 {
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .about__us__content p {
+        width: 100%;
+        font-size: 0.8rem;
+        width: 300px;
+    }
+    /*Contact Us */
+
+    .contact_section {
+        flex-direction: column;
+    }
+    .section__subtitle {
+        font-size: 2rem;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        margin-top: -20px;
+    }
+    .contact__form {
+        width: 70%;
+    }
+    /* Contact info */
+    .contact__information {
+        box-shadow: none;
+        margin-top: -90px;
+    }
+    .contact__information div i {
+        font-size: 1.5rem;
+    }
+    .contact__subtitle {
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+}
