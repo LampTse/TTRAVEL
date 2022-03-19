@@ -1,6 +1,6 @@
 /*=========== GOOGLE FONTS ==========*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400;1,600&display=swap');
 /* Base */
 :root {
   /*========  Colors ======== */
@@ -70,7 +70,7 @@ html {
 /* Main Styling */
 html,
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--main-white);
   font-size: var(--normal-font-size);
   color: var(--text-color);
@@ -127,7 +127,6 @@ button {
   color: #fff;
   padding: 0.8rem 1rem 0.8rem 1rem;
   border-radius: 0.5rem;
-  
 }
 
 .button:hover {
@@ -182,7 +181,7 @@ a {
 
 /* Fade in NavLinks*/
 .nav-links a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -212,7 +211,7 @@ a:focus::after {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
@@ -241,7 +240,6 @@ a:focus::after {
     width: 250px;
     z-index: var(--z-fixed);
   }
-
 }
 
 .nav-active {
@@ -292,9 +290,8 @@ a:focus::after {
 }
 
 #showcase {
-  content: "";
-  background: url(/IMG/Homepage/Header/showcase2.jpg) no-repeat center
-    center/cover;
+  content: '';
+  background: url(/images/Homepage/Header/1.jpg) no-repeat center center/cover;
   width: 100%;
   height: 100vh;
 }
@@ -397,7 +394,7 @@ a:focus::after {
 }
 
 .fade::after {
-  content: "TTRAVEL";
+  content: 'TTRAVEL';
   display: flex;
   align-items: center;
   justify-content: center;
@@ -483,7 +480,6 @@ a:focus::after {
   align-items: center;
   width: 80%;
   padding: 4rem;
-
 }
 
 .why_choose__img {
@@ -514,12 +510,12 @@ a:focus::after {
   z-index: -9999;
 }
 #points {
- animation: points 18s infinite linear;
- transform-origin: center;
- transform-box: fill-box;
+  animation: points 18s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
-@keyframes points{
+@keyframes points {
   from {
     transform: rotateZ(0deg);
   }
@@ -623,7 +619,7 @@ a:focus::after {
 /*======== Footer ======== */
 #footer_container {
   width: 100%;
-  
+
   background-color: var(--secontary-color);
   padding: 3rem;
 }
@@ -652,15 +648,16 @@ a:focus::after {
 }
 
 .newsletter h3 {
-  padding: 0 0 0.3rem 0;
-  color: var(--primary-color);
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
+  color: var(--main-white);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .contact__input__footer {
-  padding: 0.25rem 0.5rem 0.5rem 0;
-  border-radius: 0.3rem;
-  margin-top: 0.6rem;
-  width: 100%;
+  padding: 0.5rem 0.8rem 0.6rem 0.8rem;
+  border-radius: 8px 0px 0px 8px;
+  width: 180px;
   background-color: #f5f5f5;
   color: var(--text-color);
   font-size: 0.8rem;
@@ -669,12 +666,10 @@ a:focus::after {
 }
 
 .button__footer {
-  margin-top: 0.8rem;
   font-size: 0.8rem;
-  margin-left: 0.6rem;
   background-color: var(--primary-color);
   color: white;
-  border-radius: 8px;
+  border-radius: 0px 6px 6px 0px;
   padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
@@ -699,7 +694,7 @@ a:focus::after {
   color: var(--hover-color);
   transition: 0.5s;
 }
-.copyright h1{
+.copyright h1 {
   font-size: 0.6rem;
   text-align: center;
   margin-top: 60px;
@@ -718,8 +713,9 @@ a:focus::after {
 }
 
 #showcase2 {
-  content: "";
-  background: url(/Destinations/Header/img3.jpg) no-repeat center center/cover;
+  content: '';
+  background: url(images/Destinations/Header/1.jpg) no-repeat center
+    center/cover;
   width: 100%;
   top: 10vh;
   height: 30vh;
@@ -737,7 +733,7 @@ a:focus::after {
   padding: 1rem;
   margin-top: 60px;
   left: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 
@@ -749,7 +745,6 @@ a:focus::after {
 
 .destinations__container {
   width: 100%;
-  
 }
 
 .destinations__container > .destinations__box:nth-child(odd) {
@@ -812,16 +807,20 @@ h3 {
   padding: 0.3rem;
 }
 
-#price1 , #price2 , #price3 , #price4 , p span {
- color: var(--primary-color);
- font-weight: 500;
+#price1,
+#price2,
+#price3,
+#price4,
+p span {
+  color: var(--primary-color);
+  font-weight: 500;
 }
 .tab-content {
   border: 1px #31313121 solid;
   border-radius: 5px;
   padding: 1rem;
   margin-top: 10px;
-  width: 100%; 
+  width: 100%;
 }
 
 .destinations__content li:first-child a {
@@ -889,7 +888,7 @@ h3 {
   left: 47px;
   font-weight: 700;
   font-size: 2rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: italic;
   font-weight: 600;
 }
@@ -898,6 +897,7 @@ h3 {
   font-size: 2rem;
   color: var(--text-color);
   margin-right: 0.2em;
+  opacity: 90%;
 }
 
 .contact__title {
@@ -908,7 +908,8 @@ h3 {
 .contact__subtitle {
   font-size: 0.9rem;
   color: var(--text-color);
-  font-weight: var(--font-semi-bold);
+  font-weight: 500;
+  opacity: 80%;
 }
 
 .contact__content {
@@ -980,7 +981,7 @@ h3 {
 
 .button__footer {
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 /*======== About us =========*/
 
@@ -1014,19 +1015,27 @@ h3 {
   display: flex;
   justify-content: center;
   margin-bottom: 90px;
+  background-color: var(--text-color);
+  color: var(--main-white);
+  margin-top: 50px;
 }
 .about__us__content2 {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   text-align: center;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.about__us__content2 p {
+  color: #fff;
 }
 
 .slide {
   width: 500px;
   height: 300px;
-  border-radius: 10px 100px 100px 10px;
+  border-radius: 8px 8px 8px 8px;
   border: #dde9f7 solid 8px;
 }
 
