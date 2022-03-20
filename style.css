@@ -192,6 +192,10 @@ a {
   transition: opacity 300ms, transform 300ms;
 }
 
+.footer_links li .active {
+  color: var(--primary-color);
+}
+
 a:hover::after,
 a:focus::after {
   opacity: 1;
@@ -256,6 +260,7 @@ a:focus::after {
     transform: translateX(0px);
   }
 }
+
 /* Burger X Icon */
 
 .toggle .line1 {
@@ -647,6 +652,10 @@ a:focus::after {
   padding-top: 1.2rem;
 }
 
+.nav-links li .active {
+  color: var(--primary-color);
+}
+
 .newsletter h3 {
   padding: 0.5rem 0.5rem 0.5rem 0rem;
   color: var(--main-white);
@@ -713,30 +722,39 @@ a:focus::after {
 }
 
 #showcase2 {
+  position: relative;
   content: '';
-  background: url(images/Destinations/Header/1.jpg) no-repeat center
+  background: url(images/Destinations/Header/2.jpg) no-repeat center
     center/cover;
   width: 100%;
   top: 10vh;
   height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .showcase2__container {
-  display: flex;
-  flex-direction: row;
 }
 
+.showcase2__content {
+  display: flex;
+  align-items: center;
+}
 .showcase2__content h1 {
-  position: absolute;
-  font-size: 1.5rem;
-  color: var(--secontary-color);
-  padding: 1rem;
-  margin-top: 60px;
+  font-size: 1.2rem;
+  color: var(--main-white);
   left: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 
+.slash {
+  width: 18px;
+  height: 2.3px;
+  background-color: var(--primary-color);
+  rotate: 60deg;
+}
 /*======== Destinations =========*/
 #destinations {
   width: 100%;
@@ -1015,7 +1033,7 @@ p span {
   display: flex;
   justify-content: center;
   margin-bottom: 90px;
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
   color: var(--main-white);
   margin-top: 50px;
 }
@@ -1025,7 +1043,7 @@ p span {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 1rem 2.5rem 1rem;
 }
 
 .about__us__content2 p {
