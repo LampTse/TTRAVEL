@@ -296,7 +296,7 @@ a:focus::after {
 
 #showcase {
   content: '';
-  background: url(/images/Homepage/Header/1.jpg) no-repeat center center/cover;
+  background: url(images/Homepage/Header/1.jpg) no-repeat center center/cover;
   width: 100%;
   height: 100vh;
 }
