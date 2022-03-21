@@ -734,9 +734,6 @@ a:focus::after {
   justify-content: center;
 }
 
-.showcase2__container {
-}
-
 .showcase2__content {
   display: flex;
   align-items: center;
@@ -845,7 +842,7 @@ p span {
   color: var(--primary-color);
 }
 
-/* Tabs */
+/*====== Tabs =====*/
 .tabs li {
   cursor: pointer;
 }
@@ -1001,7 +998,7 @@ p span {
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;
   font-size: 0.8rem;
 }
-/*======== About us =========*/
+/*======== About =========*/
 
 #about__us {
   width: 100%;
