@@ -763,17 +763,6 @@ a:focus::after {
 }
 
 .destinations__container > .destinations__box:nth-child(odd) {
-  background: #ffffff;
-}
-
-.destinations__box {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 5rem;
-}
-
-.destinations__box {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
@@ -781,6 +770,13 @@ a:focus::after {
     rgba(221, 233, 247, 1) 66%,
     rgba(255, 255, 255, 1) 100%
   );
+}
+
+.destinations__box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5rem;
 }
 
 .destinations__img {
@@ -876,6 +872,16 @@ p span {
 .event-img img {
   border-radius: 8px;
   object-fit: cover;
+}
+
+.destinations__container > .events:nth-child(odd) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(221, 233, 247, 1) 36%,
+    rgba(221, 233, 247, 1) 66%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 /*======== Contact us =========*/
 #contact {
